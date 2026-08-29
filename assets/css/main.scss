@@ -39,3 +39,17 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+/* Anchor navigation: smooth scrolling, and keep headings clear of the
+   fixed masthead (see $masthead-height in _variables.scss). */
+html {
+  scroll-behavior: smooth;
+}
+
+.page__content h1[id],
+.page__content h2[id] {
+  scroll-margin-top: $masthead-height + 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

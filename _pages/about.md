@@ -7,12 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Fellow at [Microsoft Research](https://www.microsoft.com/en-us/research/) where I primarily work on hardware and algorithm co-design for machine learning in the [Systems Innovation](https://www.microsoft.com/en-us/research/group/systems-innovation/) team. 
-Previously, I was a full-time Research Intern in the same team as part of my undergraduate thesis. 
+Hi! I am a second year PhD student at [Georgia Tech](https://www.gatech.edu/), advised by Prof. Moin Qureshi. Previously, I was a Research Fellow at [Microsoft](https://www.microsoft.com/en-us/research/) where I worked on developing hardware-efficient algorithms for LLM inference. I'm currently working on developing cost-effective network topologies for disaggregated AI.
 
-I recently graduated with a Bachelor's in Electronics and Communication Engineering from [BITS Pilani](https://www.bits-pilani.ac.in/), India. 
+Please reach out (email: [rsanovar3@gatech.edu](mailto:rsanovar3@gatech.edu)) for collaborations/discussions!
 
-News
+*Updated May 2026.*
+
+Recent News
 ======
 * Oct 2024: LeanAttention has been integrated into ONNXRuntime! [ONNRT LeanAttention](https://github.com/microsoft/onnxruntime/commit/de93f40240459953a6e3bbb86b6ad83eaeab681f)
 * Aug 2024: I re-joined Microsoft Research as a Research Fellow.
