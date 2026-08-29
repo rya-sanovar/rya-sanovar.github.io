@@ -16,7 +16,9 @@ Please [reach out](mailto:rsanovar3@gatech.edu) for collaborations/discussions!
 Recent News
 ======
 * May 2026: Summer Internship at [Future AI Infrastructure Lab](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) at Microsoft Research, Cambridge.
+* April 2026: Performed at the [Spring Concert](https://music.gatech.edu/treble-choir-04-16-2026) by [Treble Choir](https://music.gatech.edu/treble-choir)! Proud to be a part of such talented singers!
 * March 2026: Submitted our paper [SIFT: Selective-Index For Fast Compute of RAG Prefill by Exploiting Attention Invariance](https://arxiv.org/abs/2606.09441)
+* August 2025: I started my PhD at Georgia Tech!
 * Oct 2024: LeanAttention has been integrated into ONNXRuntime! [ONNRT LeanAttention](https://github.com/microsoft/onnxruntime/commit/de93f40240459953a6e3bbb86b6ad83eaeab681f)
 * Aug 2024: I re-joined Microsoft Research as a Research Fellow.
 * Aug 2024: I graduated from BITS!! My home away from home :)
