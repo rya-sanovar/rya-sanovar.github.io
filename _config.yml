@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Rya Sanovar"
 title_separator          : "-"
 name                     : &name "Rya Sanovar"
-description              : &description "Research Fellow at Microsoft"
+description              : &description "PhD Student at Georgia Tech"
 url                      : https://rya-sanovar.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rya-sanovar/rya-sanovar.github.io"
@@ -24,11 +24,11 @@ author:
   avatar           : "pfp.jpeg"
   name             : "Rya Sanovar"
   pronouns         : #"she/her"  
-  bio              : "Research Fellow at Microsoft"
+  bio              : "PhD Student at Georgia Tech"
   location         : "Bengaluru, Karnataka"
-  employer         : "Microsoft"
+  employer         : "Georgia Tech"
   uri              : # URL
-  email            : "t-rsanovar@microsoft.com" 
+  email            : "rsanovar3@gatech.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

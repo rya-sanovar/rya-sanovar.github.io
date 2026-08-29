@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a second year PhD student at [Georgia Tech](https://www.gatech.edu/), advised by Prof. Moin Qureshi. Previously, I was a Research Fellow at [Microsoft](https://www.microsoft.com/en-us/research/) where I worked on developing hardware-efficient algorithms for LLM inference. I'm currently working on developing cost-effective network topologies for disaggregated AI.
+Hi! I am a second year PhD student at [Georgia Tech](https://www.gatech.edu/), advised by [Prof. Moin Qureshi](https://moin.cc.gatech.edu/) in the [Future Architecture and Systems Lab](https://fast.cc.gatech.edu/). Previously, I was a Research Fellow at [Microsoft](https://www.microsoft.com/en-us/research/) where I developed hardware-efficient algorithms for LLM inference. I'm currently working on developing cost-effective network topologies for disaggregated AI.
 
-Please reach out (email: [rsanovar3@gatech.edu](mailto:rsanovar3@gatech.edu)) for collaborations/discussions!
+Please [reach out](mailto:rsanovar3@gatech.edu) for collaborations/discussions!
 
 *Updated May 2026.*
 
