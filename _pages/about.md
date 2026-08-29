@@ -34,3 +34,17 @@ Publications
 * **[Lean Attention: Hardware-Aware Scalable Attention Mechanism for the Decode-Phase of Transformers](https://arxiv.org/abs/2405.10480)**\
   Rya Sanovar, Srikant Bharadwaj, Renee St. Amant, Victor Rühle, Saravan Rajmohan.\
   *MLSys 2025*
+
+Work Experience
+======
+* **Research Intern**, [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/), Cambridge, UK\
+  *May 2026 – August 2026*\
+  Developing cost-effective scale-out network topologies for disaggregated inference, resilient to network failures at datacenter scale.
+* **Research Fellow**, [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/), Bangalore, India\
+  *January 2024 – July 2025*\
+  Developed LeanAttention, a hardware-aware scalable exact-attention execution mechanism that accelerates attention by 2.6x over FlashAttention-2.
+
+Recent Talks
+======
+* **[Lean Attention: Hardware-Aware Scalable Attention Mechanism for the Decode-Phase of Transformers](https://mlsys.org/virtual/2025/poster/3269)**\
+  Conference talk at MLSys 2025, Santa Clara, May 2025.

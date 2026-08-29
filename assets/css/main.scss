@@ -45,11 +45,36 @@ html {
   scroll-behavior: smooth;
 }
 
-.page__content h1[id],
-.page__content h2[id] {
-  scroll-margin-top: $masthead-height + 20px;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+/* Section rhythm: give each homepage section room to breathe and a
+   hairline rule above it, rather than running them all together. */
+.page__content {
+  h1[id] {
+    margin-top: 3.5em;
+    padding-top: 1.75em;
+    margin-bottom: 0.75em;
+    border-top: 1px solid $border-color;
+    scroll-margin-top: $masthead-height + 20px;
+  }
+
+  h2[id] {
+    scroll-margin-top: $masthead-height + 20px;
+  }
+
+  /* the first section sits closer to the intro paragraphs */
+  h1[id]:first-of-type {
+    margin-top: 2.5em;
+  }
+
+  h1[id] + ul {
+    margin-top: 1.25em;
+
+    > li {
+      margin-bottom: 1.1em;
+      line-height: 1.55;
+    }
+  }
 }
