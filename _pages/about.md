@@ -33,4 +33,4 @@ Publications
   *Under submission.*
 * **[Lean Attention: Hardware-Aware Scalable Attention Mechanism for the Decode-Phase of Transformers](https://arxiv.org/abs/2405.10480)**\
   Rya Sanovar, Srikant Bharadwaj, Renee St. Amant, Victor Rühle, Saravan Rajmohan.\
-  *Published at the Eighth Annual Conference on Machine Learning and Systems (MLSys), Santa Clara, May 2025.*
+  *MLSys 2025*
