@@ -19,6 +19,7 @@ Recent News
 * April 2026: Performed at the [Spring Concert](https://music.gatech.edu/treble-choir-04-16-2026) by [Treble Choir](https://music.gatech.edu/treble-choir)! Proud to be a part of such talented singers!
 * March 2026: Submitted our paper [SIFT: Selective-Index For Fast Compute of RAG Prefill by Exploiting Attention Invariance](https://arxiv.org/abs/2606.09441)
 * August 2025: I started my PhD at Georgia Tech!
+* May 2025: I gave a talk on LeanAttention at [MLSys 2025](https://mlsys.org/virtual/2025/poster/3269)!
 * October 2024: LeanAttention has been integrated into ONNXRuntime! [ONNRT LeanAttention](https://github.com/microsoft/onnxruntime/commit/de93f40240459953a6e3bbb86b6ad83eaeab681f)
 * August 2024: I re-joined Microsoft Research as a Research Fellow.
 * August 2024: I graduated from BITS!! My home away from home :)
