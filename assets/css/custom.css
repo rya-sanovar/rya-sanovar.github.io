@@ -79,7 +79,11 @@
 				content: "— ";
 			}
 
-/* About: the paragraph describing the background art */
+/* About: the poem's title line, then the paragraph about it */
+
+	.art-title {
+		margin-bottom: 0.5em;
+	}
 
 	.art-note {
 		font-size: 0.95em;
