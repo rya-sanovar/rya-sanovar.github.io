@@ -168,6 +168,29 @@
 		}
 	}
 
+/* CV: Hephaestus drawing, eyes kept in frame to the right of the card */
+
+	#cv {
+		background: #e9e9e4 url("../../images/hephaestus-cv.jpg") 72% 47% / cover no-repeat;
+	}
+
+		#cv .box.style2 {
+			text-align: center;
+		}
+
+		#cv .cv-contact {
+			line-height: 1.9em;
+		}
+
+	@media screen and (max-width: 736px) {
+		/* on phones the card spans the width; show the eyes in the strip below it */
+		#cv {
+			background-size: 240% auto;
+			background-position: 85% calc(100% + 190px);
+			padding-bottom: 20em;
+		}
+	}
+
 /* Regular weight for all text (the template uses light); dates stay light */
 
 	body, input, textarea, select {
@@ -178,9 +201,10 @@
 		font-weight: 300;
 	}
 
-	/* the template hides line breaks on phones; keep them in lists */
+	/* the template hides line breaks on phones; keep them in lists and the CV contact lines */
 	@media screen and (max-width: 736px) {
-		.main > .content .entries br {
+		.main > .content .entries br,
+		.main > .content .cv-contact br {
 			display: inline;
 		}
 	}

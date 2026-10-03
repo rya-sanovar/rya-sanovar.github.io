@@ -162,13 +162,18 @@
 
 		</div>
 
-		<!-- CV -->
-			<section id="cv" class="main style3 secondary">
-				<div class="content">
+		<!-- CV. Background: images/hephaestus-cv.jpg (set in custom.css) -->
+			<section id="cv" class="main style2 left dark fullscreen">
+				<div class="content box style2">
 					<img src="images/pfp.jpeg" alt="Rya Sanovar" class="circle-img" />
 					<header>
-						<h2>CV</h2>
+						<h2>Rya Sanovar's CV</h2>
 					</header>
+					<p class="cv-contact">
+						Email: <a href="mailto:rsanovar3@gatech.edu">rsanovar3@gatech.edu</a><br />
+						LinkedIn: <a href="https://www.linkedin.com/in/rya-sanovar/">linkedin.com/in/rya-sanovar</a><br />
+						Website: <a href="https://ryasanovar.com">ryasanovar.com</a>
+					</p>
 					<ul class="actions special pills">
 						<li>
 							<a class="pill" href="RyaSanovar_CV.pdf" download="RyaSanovar_CV.pdf">
@@ -230,6 +235,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Open every link that leaves the site (and the CV PDF) in a new tab.
+				// In-page links (#about etc.), email links and the CV download stay as they are.
+				document.querySelectorAll('a[href^="http"], a[href$=".pdf"]:not([download])').forEach(function (a) {
+					a.target = '_blank';
+					a.rel = 'noopener';
+				});
+			</script>
 
 	</body>
 </html>
