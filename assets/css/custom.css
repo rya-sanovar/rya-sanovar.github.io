@@ -62,7 +62,7 @@
 
 		#workexp > .content {
 			width: 49em;
-			padding: 1.75em 2em;
+			padding: 0.9em 2em 0.6em 2em;
 			border-radius: 16px;
 			background: rgba(255, 255, 255, 0.66);
 			-webkit-backdrop-filter: blur(8px) saturate(120%);
@@ -119,9 +119,21 @@
 				color: var(--rule);
 			}
 
+		/* no extra space under the last item, so the panel hugs the text */
+		#workexp .entries > ul:last-child,
+		#workexp .entries > ul:last-child > li:last-child,
+		#workexp .entries ul.bullets:last-child,
+		#workexp .entries ul.bullets > li:last-child {
+			margin-bottom: 0;
+		}
+
+		#workexp .content > header {
+			margin-bottom: 1em;
+		}
+
 	@media screen and (max-width: 736px) {
 		#workexp > .content {
-			padding: 1.5em 1em;
+			padding: 0.9em 1em 0.6em 1em;
 		}
 	}
 
@@ -189,6 +201,49 @@
 			background-position: 85% calc(100% + 190px);
 			padding-bottom: 20em;
 		}
+	}
+
+/* Contact: abstract painting behind a centred white card */
+
+	#contact {
+		background: url("../../images/abstract-art.jpg") center center / cover no-repeat;
+		padding-top: 10em;
+		padding-bottom: 10em;
+	}
+
+		#contact > .content {
+			width: 34em;
+			background: #ffffff;
+			padding: 2.5em 2.5em 2em 2.5em;
+		}
+
+			#contact > .content > header {
+				margin-bottom: 1em;
+			}
+
+		#contact .box {
+			background: transparent;
+			padding: 0;
+		}
+
+	@media screen and (max-width: 736px) {
+		#contact {
+			padding-top: 6em;
+			padding-bottom: 6em;
+		}
+
+			#contact > .content {
+				padding: 2em 1.25em 1.5em 1.25em;
+			}
+
+			#contact ul.pills li {
+				padding-left: 0.6em;
+			}
+
+			#contact a.pill {
+				padding: 0.45em 0.9em;
+				white-space: nowrap;
+			}
 	}
 
 /* Regular weight for all text (the template uses light); dates stay light */
