@@ -50,7 +50,7 @@
 	}
 
 /* What I Do: photo background with the text on a frosted-glass panel.
-   Raise the panel's white (0.52 desktop / 0.66 phone) for more legibility,
+   Raise the panel's white (0.64 desktop / 0.76 phone) for more legibility,
    lower it to show more photo. */
 
 	#workexp {
@@ -65,7 +65,7 @@
 			width: 49em;
 			padding: 0.9em 2em 0.6em 2em;
 			border-radius: 16px;
-			background: rgba(255, 255, 255, 0.66);
+			background: rgba(255, 255, 255, 0.76);
 			-webkit-backdrop-filter: blur(8px) saturate(120%);
 			backdrop-filter: blur(8px) saturate(120%);
 			border: 1px solid rgba(255, 255, 255, 0.55);
@@ -76,7 +76,7 @@
 		   panel (both are fixed to the window), so the glass works in every browser */
 		body:not(.is-touch) #workexp > .content {
 			background:
-				linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)),
+				linear-gradient(rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.64)),
 				url("../../images/scotland-blur.jpg") center center / cover fixed no-repeat;
 			-webkit-backdrop-filter: none;
 			backdrop-filter: none;
