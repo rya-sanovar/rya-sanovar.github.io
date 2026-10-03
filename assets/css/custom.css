@@ -1,5 +1,6 @@
 /* Regular (400, plus its italic) and semi-bold (600); main.css only loads 300 and 900 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
 
 /* Personal tweaks layered on top of Big Picture's main.css.
    Change --accent to recolor the pill buttons and highlights everywhere. */
@@ -246,6 +247,27 @@
 			}
 	}
 
+/* Footer: maroon bar with white icons and text */
+
+	#footer {
+		background: var(--rule);
+		color: #ffffff;
+	}
+
+		#footer a,
+		#footer .icon:before {
+			color: #ffffff;
+		}
+
+			#footer a:hover,
+			#footer a:hover:before {
+				color: rgba(255, 255, 255, 0.75);
+			}
+
+		#footer ul.menu li {
+			border-left-color: rgba(255, 255, 255, 0.35);
+		}
+
 /* Regular weight for all text (the template uses light); dates stay light */
 
 	body, input, textarea, select {
@@ -264,11 +286,15 @@
 		}
 	}
 
-/* Header name (in the maroon accent) links back to the top */
+/* Header name: maroon, handwritten (Caveat); links back to the top */
 
 	#header h1 a {
 		border-bottom: none;
 		color: var(--rule);
+		font-family: "Caveat", cursive;
+		font-weight: 600;
+		font-size: 1.75em;
+		letter-spacing: 0;
 	}
 
 /* Intro quote */
