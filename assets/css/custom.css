@@ -85,34 +85,76 @@
 			border-bottom-color: var(--rule);
 		}
 
-		/* slightly heavier text over the photo; dates keep the light weight */
-		#workexp > .content {
+		/* What I Do and Publications share one look over their photos:
+		   dark text, black bold headings, semi-bold titles, light dates */
+		#workexp > .content,
+		#pubs > .content {
 			color: #33373d;
-			font-weight: 400;
-		}
-
-		#workexp .dates {
-			font-weight: 300;
 		}
 
 		#workexp .entries ul.bullets,
-		#workexp .dates {
+		#workexp .dates,
+		#pubs .dates {
 			color: #44484f;
 		}
 
-		#workexp .entries h3 {
+		#workexp .entries h3,
+		#pubs .entries h3 {
 			color: #111111;
 			font-weight: 900;
 		}
 
-		#workexp .role {
+		#workexp .role,
+		#pubs .entries strong {
 			font-weight: 600;
 			color: #111111;
 		}
 
+		#pubs .entries a:not(.pill) {
+			color: #111111;
+			text-decoration-color: var(--rule);
+		}
+
+			#pubs .entries a:not(.pill):hover {
+				color: var(--rule);
+			}
+
 	@media screen and (max-width: 736px) {
 		#workexp > .content {
 			padding: 1.5em 1em;
+		}
+	}
+
+/* Publications: Georgia Tech evening sky, pinned to the bottom-left so the
+   lamp and GT flag sit in that corner. The extra bottom padding keeps the
+   text above the lamp, over open sky. */
+
+	#pubs {
+		background: #989e9f url("../../images/georgia-moon-sky.jpg") left bottom / cover no-repeat;
+		padding-top: 9em; /* lets the moon sit above the heading */
+		padding-bottom: calc(21vw + 2em);
+	}
+
+	@media screen and (max-width: 736px) {
+		#pubs {
+			padding-bottom: 26em;
+		}
+	}
+
+/* Regular weight for all text (the template uses light); dates stay light */
+
+	body, input, textarea, select {
+		font-weight: 400;
+	}
+
+	.dates {
+		font-weight: 300;
+	}
+
+	/* the template hides line breaks on phones; keep them in lists */
+	@media screen and (max-width: 736px) {
+		.main > .content .entries br {
+			display: inline;
 		}
 	}
 
