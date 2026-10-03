@@ -264,11 +264,11 @@
 		}
 	}
 
-/* Header name links back to the top */
+/* Header name (in the maroon accent) links back to the top */
 
 	#header h1 a {
 		border-bottom: none;
-		color: inherit;
+		color: var(--rule);
 	}
 
 /* Intro quote */
