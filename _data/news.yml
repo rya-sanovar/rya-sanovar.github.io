@@ -1,0 +1,33 @@
+# Every news item, newest first. The homepage shows the first 5 (see the
+# "Recent News" section in index.html). Add new items at the top.
+# `text` is Markdown, so links are written [like this](https://...).
+
+- date: May 2026
+  text: 'I spent my summer working in Cambridge at [Future AI Infrastructure Lab, Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/)!'
+
+- date: April 2026
+  text: 'I performed at the [Spring Concert](https://music.gatech.edu/treble-choir-04-16-2026) by [Treble Choir](https://music.gatech.edu/treble-choir)! Proud to be a part of an incredible team of singers!'
+
+- date: March 2026
+  text: 'Submitted our paper [SIFT: Selective-Index For Fast Compute of RAG Prefill by Exploiting Attention Invariance](https://arxiv.org/abs/2606.09441)'
+
+- date: August 2025
+  text: 'I started my PhD at Georgia Tech!'
+
+- date: May 2025
+  text: 'I gave a talk on LeanAttention at [MLSys 2025](https://mlsys.org/virtual/2025/poster/3269)!'
+
+- date: October 2024
+  text: 'LeanAttention has been integrated into ONNXRuntime! [ONNRT LeanAttention](https://github.com/microsoft/onnxruntime/commit/de93f40240459953a6e3bbb86b6ad83eaeab681f)'
+
+- date: August 2024
+  text: 'I re-joined Microsoft Research as a Research Fellow.'
+
+- date: August 2024
+  text: 'I graduated from BITS!! My home away from home :)'
+
+- date: May 2024
+  text: 'Paper on efficient execution of attention kernels for ragged batching and long context length scenarios. [Lean Attention: Hardware-Aware Scalable Attention Mechanism for the Decode-Phase of Transformers](https://arxiv.org/pdf/2405.10480)'
+
+- date: January 2024
+  text: 'I joined Microsoft Research as an undergraduate Intern.'

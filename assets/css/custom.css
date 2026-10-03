@@ -154,6 +154,32 @@
 		margin-left: 0.4em;
 	}
 
+/* Recent News: date column + text */
+
+	.entries ul.news li {
+		display: flex;
+		gap: 1.5em;
+		margin: 0 0 1em 0;
+		line-height: 1.6em;
+	}
+
+		.entries ul.news .when {
+			flex: 0 0 7.5em;
+			font-weight: 900;
+			color: var(--muted);
+		}
+
+	@media screen and (max-width: 736px) {
+		.entries ul.news li {
+			flex-direction: column;
+			gap: 0;
+		}
+
+			.entries ul.news .when {
+				flex-basis: auto;
+			}
+	}
+
 /* Pill buttons, in the spirit of ellaneumann.com */
 
 	ul.pills {
