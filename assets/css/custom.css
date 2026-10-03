@@ -1,5 +1,5 @@
-/* Regular (400) and semi-bold (600) weights; main.css only loads 300 and 900 */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap");
+/* Regular (400, plus its italic) and semi-bold (600); main.css only loads 300 and 900 */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600&display=swap");
 
 /* Personal tweaks layered on top of Big Picture's main.css.
    Change --accent to recolor the pill buttons and highlights everywhere. */
@@ -142,6 +142,11 @@
 			font-style: normal;
 			letter-spacing: 0.08em;
 		}
+
+			#intro .quote {
+				font-weight: 400;
+				color: var(--rule);
+			}
 
 			#intro .quote cite {
 				color: var(--muted);
