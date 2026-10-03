@@ -39,11 +39,9 @@
 		}
 	}
 
+	/* About: paper-coloured backdrop matching the China rose plate */
 	#about {
-		background: url("images/overlay.png"), url("../../images/about.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: #fdf9cb;
 	}
 
 /* Header name links back to the top */
@@ -87,6 +85,84 @@
 		font-size: 0.95em;
 		padding-bottom: 1.25em;
 		border-bottom: 1px solid #e0e0e0;
+	}
+
+/* About: the China rose plate, with the poem pinned under its right branch.
+   The poem is positioned in % of the picture, so it stays put at any size.
+   Nudge it with left/top on .rose-poem. */
+
+	.rose {
+		position: absolute;
+		top: calc(50% + 0.5em);
+		--rose-width: calc((100vh - 9em) * 0.5647);
+		right: calc((60vw - var(--rose-width)) / 2);
+		transform: translateY(-50%);
+		width: var(--rose-width);
+		margin: 0;
+		container-type: inline-size;
+	}
+
+		.rose img {
+			display: block;
+			width: 100%;
+			height: auto;
+			/* soften the plate's edges into the background */
+			-webkit-mask-image: radial-gradient(ellipse 60% 62% at 50% 50%, #000 60%, transparent 100%);
+			mask-image: radial-gradient(ellipse 60% 62% at 50% 50%, #000 60%, transparent 100%);
+		}
+
+		.rose-poem {
+			position: absolute;
+			left: 51%;
+			top: 62%;
+			margin: 0;
+			font-style: italic;
+			font-size: 4.1cqw;
+			line-height: 1.5;
+			color: #3a3024;
+			white-space: nowrap;
+			text-align: left;
+		}
+
+		/* label sits just under the picture, so the poem's % position is unaffected */
+		.rose figcaption {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			margin-top: 0.3em;
+			text-align: center;
+			white-space: nowrap;
+			font-size: 3.6cqw;
+			letter-spacing: 0.03em;
+			color: #6b5d48;
+		}
+
+	@media screen and (max-width: 1280px) {
+		.rose {
+			right: calc((50vw - var(--rose-width)) / 2);
+		}
+	}
+
+	@media screen and (max-width: 1000px) {
+		#about {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.rose {
+			position: relative;
+			top: auto;
+			right: auto;
+			transform: none;
+			width: min(85%, 420px);
+			margin: 2em auto 0 auto;
+		}
+
+			.rose figcaption {
+				position: static;
+				white-space: normal;
+			}
 	}
 
 /* Round profile photo (CV) */
