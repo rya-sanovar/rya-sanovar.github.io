@@ -1,3 +1,6 @@
+/* Semi-bold (600) for job titles; main.css only loads 300 and 900 */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
+
 /* Personal tweaks layered on top of Big Picture's main.css.
    Change --accent to recolor the pill buttons and highlights everywhere. */
 
@@ -45,7 +48,7 @@
 	}
 
 /* What I Do: photo background with the text on a frosted-glass panel.
-   Raise the panel's white (0.66 desktop / 0.72 phone) for more legibility,
+   Raise the panel's white (0.52 desktop / 0.66 phone) for more legibility,
    lower it to show more photo. */
 
 	#workexp {
@@ -57,12 +60,12 @@
 	}
 
 		#workexp > .content {
-			width: 52em;
-			padding: 3em 3.5em;
-			border-radius: 18px;
-			background: rgba(255, 255, 255, 0.72);
-			-webkit-backdrop-filter: blur(14px) saturate(120%);
-			backdrop-filter: blur(14px) saturate(120%);
+			width: 49em;
+			padding: 1.75em 2em;
+			border-radius: 16px;
+			background: rgba(255, 255, 255, 0.66);
+			-webkit-backdrop-filter: blur(8px) saturate(120%);
+			backdrop-filter: blur(8px) saturate(120%);
 			border: 1px solid rgba(255, 255, 255, 0.55);
 			box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
 		}
@@ -71,7 +74,7 @@
 		   panel (both are fixed to the window), so the glass works in every browser */
 		body:not(.is-touch) #workexp > .content {
 			background:
-				linear-gradient(rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.66)),
+				linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)),
 				url("../../images/scotland-blur.jpg") center center / cover fixed no-repeat;
 			-webkit-backdrop-filter: none;
 			backdrop-filter: none;
@@ -85,13 +88,24 @@
 			color: #33373d;
 		}
 
-		#workexp .entries ul.bullets {
-			color: #4a4e55;
+		#workexp .entries ul.bullets,
+		#workexp .dates {
+			color: #44484f;
+		}
+
+		#workexp .entries h3 {
+			color: #111111;
+			font-weight: 900;
+		}
+
+		#workexp .role {
+			font-weight: 600;
+			color: #111111;
 		}
 
 	@media screen and (max-width: 736px) {
 		#workexp > .content {
-			padding: 2em 1.25em;
+			padding: 1.5em 1em;
 		}
 	}
 
