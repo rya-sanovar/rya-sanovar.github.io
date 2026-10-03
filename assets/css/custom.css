@@ -44,6 +44,57 @@
 		background: #fdf9cb;
 	}
 
+/* What I Do: photo background with the text on a frosted-glass panel.
+   Raise the panel's white (0.66 desktop / 0.72 phone) for more legibility,
+   lower it to show more photo. */
+
+	#workexp {
+		background: url("../../images/scotland.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+		#workexp > .content {
+			width: 52em;
+			padding: 3em 3.5em;
+			border-radius: 18px;
+			background: rgba(255, 255, 255, 0.72);
+			-webkit-backdrop-filter: blur(14px) saturate(120%);
+			backdrop-filter: blur(14px) saturate(120%);
+			border: 1px solid rgba(255, 255, 255, 0.55);
+			box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+		}
+
+		/* On desktop, a pre-blurred copy of the photo lines up exactly behind the
+		   panel (both are fixed to the window), so the glass works in every browser */
+		body:not(.is-touch) #workexp > .content {
+			background:
+				linear-gradient(rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.66)),
+				url("../../images/scotland-blur.jpg") center center / cover fixed no-repeat;
+			-webkit-backdrop-filter: none;
+			backdrop-filter: none;
+		}
+
+		#workexp .entries h3 {
+			border-bottom-color: rgba(0, 0, 0, 0.12);
+		}
+
+		#workexp > .content {
+			color: #33373d;
+		}
+
+		#workexp .entries ul.bullets {
+			color: #4a4e55;
+		}
+
+	@media screen and (max-width: 736px) {
+		#workexp > .content {
+			padding: 2em 1.25em;
+		}
+	}
+
 /* Header name links back to the top */
 
 	#header h1 a {
