@@ -1,5 +1,5 @@
-/* Semi-bold (600) for job titles; main.css only loads 300 and 900 */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
+/* Regular (400) and semi-bold (600) weights; main.css only loads 300 and 900 */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap");
 
 /* Personal tweaks layered on top of Big Picture's main.css.
    Change --accent to recolor the pill buttons and highlights everywhere. */
@@ -10,6 +10,7 @@
 	--ink: #2b2b2b;
 	--muted: #6b6f76;
 	--link: #b8693a;
+	--rule: #7d2f3b; /* bruised maroon: the divider lines in every section */
 }
 
 /* Links in the white/grey sections use the accent instead of the template's green */
@@ -81,11 +82,17 @@
 		}
 
 		#workexp .entries h3 {
-			border-bottom-color: rgba(0, 0, 0, 0.12);
+			border-bottom-color: var(--rule);
 		}
 
+		/* slightly heavier text over the photo; dates keep the light weight */
 		#workexp > .content {
 			color: #33373d;
+			font-weight: 400;
+		}
+
+		#workexp .dates {
+			font-weight: 300;
 		}
 
 		#workexp .entries ul.bullets,
@@ -153,7 +160,7 @@
 	.art-note {
 		font-size: 0.95em;
 		padding-bottom: 1.25em;
-		border-bottom: 1px solid #e0e0e0;
+		border-bottom: 2px solid var(--rule);
 	}
 
 /* About: the China rose plate, with the poem pinned under its right branch.
@@ -267,7 +274,7 @@
 			color: var(--muted);
 			margin: 2em 0 0.8em 0;
 			padding-bottom: 0.4em;
-			border-bottom: 1px solid #e0e0e0;
+			border-bottom: 2px solid var(--rule);
 		}
 
 		.entries ul {
