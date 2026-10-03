@@ -1,0 +1,193 @@
+/* Personal tweaks layered on top of Big Picture's main.css.
+   Change --accent to recolor the pill buttons and highlights everywhere. */
+
+:root {
+	--accent: #f4c9a8;
+	--accent-strong: #e9a274;
+	--ink: #2b2b2b;
+	--muted: #6b6f76;
+	--link: #b8693a;
+}
+
+/* Links in the white/grey sections use the accent instead of the template's green */
+
+	.main.style3 a:not(.pill) {
+		color: var(--link);
+	}
+
+		.main.style3 a:not(.pill):hover {
+			color: var(--accent-strong);
+		}
+
+/* Section backgrounds: swap the image files to change them */
+
+	#about {
+		background: url("images/overlay.png"), url("../../images/about.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Header name links back to the top */
+
+	#header h1 a {
+		border-bottom: none;
+		color: inherit;
+	}
+
+/* Intro quote */
+
+	.quote {
+		border-left: none;
+		font-style: italic;
+		font-size: 1.4em;
+		line-height: 1.5em;
+		max-width: 30em;
+		margin: 0 auto 2em auto;
+		padding: 0;
+	}
+
+		.quote cite {
+			display: block;
+			margin-top: 0.75em;
+			font-size: 0.7em;
+			font-style: normal;
+			letter-spacing: 0.08em;
+		}
+
+			.quote cite:before {
+				content: "— ";
+			}
+
+/* About: the paragraph describing the background art */
+
+	.art-note {
+		font-size: 0.95em;
+		padding-bottom: 1.25em;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+/* Round profile photo (CV) */
+
+	.circle-img {
+		display: block;
+		width: 140px;
+		height: 140px;
+		margin: 0 auto 1.25em auto;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	@media screen and (max-width: 736px) {
+		.circle-img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+/* Left-aligned lists inside the centered white/grey sections */
+
+	.entries {
+		max-width: 46em;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+		.entries h3 {
+			font-size: 1em;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			color: var(--muted);
+			margin: 2em 0 0.8em 0;
+			padding-bottom: 0.4em;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		.entries ul {
+			list-style: none;
+			padding: 0;
+		}
+
+			.entries > ul > li {
+				margin: 0 0 1.4em 0;
+				line-height: 1.6em;
+			}
+
+		.entries ul.interests li {
+			margin-bottom: 0.6em;
+			padding-left: 1.2em;
+			position: relative;
+		}
+
+			.entries ul.interests li:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.6em;
+				width: 0.45em;
+				height: 0.45em;
+				border-radius: 50%;
+				background: var(--accent-strong);
+			}
+
+		.entries ul.bullets {
+			list-style: disc;
+			padding-left: 1.4em;
+			margin: 0.4em 0 0 0;
+			color: var(--muted);
+		}
+
+			.entries ul.bullets li {
+				margin-bottom: 0.3em;
+				padding-left: 0;
+			}
+
+		.entries .me {
+			text-decoration: underline;
+			text-decoration-color: var(--accent-strong);
+			text-underline-offset: 3px;
+		}
+
+	.dates {
+		color: var(--muted);
+		font-size: 0.9em;
+		margin-left: 0.4em;
+	}
+
+/* Pill buttons, in the spirit of ellaneumann.com */
+
+	ul.pills {
+		margin-top: 1em;
+	}
+
+	a.pill {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4em;
+		background: var(--accent);
+		color: var(--ink);
+		border: none;
+		border-radius: 9999px;
+		padding: 0.45em 1.3em;
+		font-weight: 900;
+		text-decoration: none;
+		transition: transform 0.08s ease, box-shadow 0.15s ease, background 0.2s ease;
+	}
+
+		a.pill:hover {
+			background: var(--accent-strong);
+			transform: translateY(-1px);
+			box-shadow: 0 4px 10px rgba(233, 162, 116, 0.35);
+		}
+
+	.pill-icon {
+		width: 1.1em;
+		height: 1.1em;
+	}
+
+/* Contact */
+
+	#contact .email {
+		font-size: 1.4em;
+		margin-bottom: 0.5em;
+	}

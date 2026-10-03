@@ -4,102 +4,168 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Big Picture by HTML5 UP</title>
+		<title>Rya Sanovar</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Rya Sanovar, PhD student at Georgia Tech working on efficient LLM inference." />
+		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Big Picture</h1>
+				<h1><a href="#intro">Rya Sanovar</a></h1>
 				<nav>
 					<ul>
-						<li><a href="#intro">Intro</a></li>
-						<li><a href="#one">What I Do</a></li>
-						<li><a href="#two">Who I Am</a></li>
-						<li><a href="#work">My Work</a></li>
+						<li><a href="#intro">Hey!</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#workexp">What I Do</a></li>
+						<li><a href="#pubs">Publications</a></li>
+						<li><a href="#cv">CV</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
 
-		<!-- Intro -->
+		<!-- Hey!: art + quote. Background image: images/intro.jpg -->
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
 					<header>
-						<h2>Hey.</h2>
+						<h2>Hey!</h2>
 					</header>
-					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed by <a href="https://html5up.net">HTML5 UP</a><br />
-					and released for free under the <a href="https://html5up.net/license">Creative Commons Attribution license</a>.</p>
+					<!-- TODO: your quote -->
+					<blockquote class="quote">
+						Your favorite quote goes here.
+						<cite>Who said it</cite>
+					</blockquote>
 					<footer>
-						<a href="#one" class="button style2 down">More</a>
+						<a href="#about" class="button style2 down">More</a>
 					</footer>
 				</div>
 			</section>
 
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
+		<!-- About. Background image: images/about.jpg (your art) -->
+			<section id="about" class="main style2 left dark fullscreen">
 				<div class="content box style2">
+					<header>
+						<h2>About</h2>
+					</header>
+					<!-- TODO: describe the art in the background -->
+					<p class="art-note"><strong>Title of the piece</strong>, <em>medium, year</em>.
+					A few lines about this piece: what it is, when you made it, why it's here.</p>
+					<p>Hi! I am a second year PhD student at <a href="https://www.gatech.edu/">Georgia Tech</a>,
+					advised by <a href="https://moin.cc.gatech.edu/">Prof. Moin Qureshi</a> in the
+					<a href="https://fast.cc.gatech.edu/">Future Architecture and Systems Lab</a>.
+					Previously, I was a Research Fellow at <a href="https://www.microsoft.com/en-us/research/">Microsoft</a>,
+					where I developed hardware-efficient algorithms for LLM inference. I'm currently working on
+					developing cost-effective network topologies for disaggregated AI.</p>
+					<p>Please <a href="#contact">reach out</a> for collaborations/discussions!</p>
+				</div>
+				<a href="#workexp" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- What I Do: research interests + work experience -->
+			<section id="workexp" class="main style3 primary">
+				<div class="content">
 					<header>
 						<h2>What I Do</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+
+					<div class="entries">
+						<h3>Research Interests</h3>
+						<ul class="interests">
+							<li>Efficient LLM inference: hardware-aware attention and kernel design</li>
+							<li>Disaggregated AI: cost-effective, failure-resilient network topologies for datacenter-scale inference</li>
+							<li>Retrieval-augmented generation: faster prefill by exploiting attention invariance</li>
+						</ul>
+
+						<h3>Work Experience</h3>
+						<ul>
+							<li>
+								<strong>Research Intern</strong>, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/">Microsoft Research</a>, Cambridge, UK
+								<span class="dates">May 2026 – Aug 2026</span>
+								<ul class="bullets">
+									<li>Investigated fault tolerance for disaggregated decode: the impact of network link and device failures on decode throughput and tail latencies.</li>
+									<li>Developed cost-effective scale-out network topologies for disaggregated inference, resilient to network failures at datacenter scale.</li>
+								</ul>
+							</li>
+							<li>
+								<strong>Research Fellow</strong>, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research</a>, Bangalore, India
+								<span class="dates">Jan 2024 – Jul 2025</span>
+								<ul class="bullets">
+									<li>Developed LeanAttention, a hardware-aware scalable exact-attention execution mechanism that accelerates attention by 2.6x over FlashAttention-2, <a href="https://github.com/microsoft/onnxruntime/commit/de93f40240459953a6e3bbb86b6ad83eaeab681f">integrated into ONNX Runtime</a>.</li>
+									<li>Published and filed patents on novel techniques to improve the efficiency of LLM inference.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
 
-		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Who I Am</h2>
-					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
-				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
-			</section>
-
-		<!-- Work -->
-			<section id="work" class="main style3 primary">
+		<!-- Publications + patents -->
+			<section id="pubs" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<h2>Publications</h2>
 					</header>
 
-					<!-- Gallery  -->
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
-							</article>
-						</div>
+					<div class="entries">
+						<h3>Papers &amp; Posters</h3>
+						<ul>
+							<li>
+								<a href="https://arxiv.org/abs/2606.09441"><strong>SIFT: Selective-Index For Fast Compute of RAG Prefill by Exploiting Attention Invariance</strong></a><br />
+								<span class="me">Rya Sanovar</span>, Srikant Bharadwaj, Hritvik Taneja, Moinuddin Qureshi<br />
+								<em>Under submission</em>
+							</li>
+							<li>
+								<a href="https://arxiv.org/abs/2405.10480"><strong>Lean Attention: Hardware-Aware Scalable Attention Mechanism for the Decode-Phase of Transformers</strong></a><br />
+								<span class="me">Rya Sanovar</span>, Srikant Bharadwaj, Renee St. Amant, Victor Rühle, Saravan Rajmohan<br />
+								<em>MLSys 2025</em>, Santa Clara
+							</li>
+							<li>
+								<strong>Horses for Courses: Unique Hardware Efficiency Challenges and Solutions for Prefill and Decode Inference</strong><br />
+								<span class="me">Rya Sanovar</span><br />
+								<em>Poster, Young Professionals Symposium @ MLSys 2025</em>, Santa Clara
+							</li>
+						</ul>
 
+						<h3>Patents</h3>
+						<ul>
+							<li>
+								<strong>Hardware-aware attention mechanism with dynamic workload distribution for transformer models</strong><br />
+								<span class="me">Rya Sanovar</span>, Srikant Bharadwaj, Victor Rühle
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		<!-- CV -->
+			<section id="cv" class="main style3 primary">
+				<div class="content">
+					<img src="images/pfp.jpeg" alt="Rya Sanovar" class="circle-img" />
+					<header>
+						<h2>CV</h2>
+					</header>
+					<ul class="actions special pills">
+						<li>
+							<a class="pill" href="RyaSanovar_CV.pdf" download="RyaSanovar_CV.pdf">
+								<svg class="pill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 20a1 1 0 0 1-1-1v-2h2v1h12v-1h2v2a1 1 0 0 1-1 1H5Zm7-4l-5-5h3V4h4v7h3l-5 5Z"/></svg>
+								Download
+							</a>
+						</li>
+						<li>
+							<a class="pill" href="RyaSanovar_CV.pdf" target="_blank" rel="noopener">
+								<svg class="pill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></svg>
+								View
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 
@@ -107,20 +173,16 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Say Hello.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<h2>Say hello.</h2>
+						<p>The best way to reach me is email.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-							</div>
-							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
+						<p class="email"><a href="mailto:rsanovar3@gatech.edu">rsanovar3@gatech.edu</a></p>
+						<ul class="actions special pills">
+							<li><a class="pill" href="mailto:rsanovar3@gatech.edu">Email</a></li>
+							<li><a class="pill" href="https://www.linkedin.com/in/rya-sanovar-b418a4239/">LinkedIn</a></li>
+							<li><a class="pill" href="https://scholar.google.com/citations?user=9bbCHNUAAAAJ">Google Scholar</a></li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -130,17 +192,15 @@
 
 				<!-- Icons -->
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="https://www.linkedin.com/in/rya-sanovar-b418a4239/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:rsanovar3@gatech.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						<li><a href="mailto:rsanovar3@gatech.edu">rsanovar3@gatech.edu</a></li>
+						<li>&copy; Rya Sanovar 2026</li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</footer>
