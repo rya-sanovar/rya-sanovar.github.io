@@ -3,11 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
 
 /* Personal tweaks layered on top of Big Picture's main.css.
-   Change --accent to recolor the pill buttons and highlights everywhere. */
+   --pill sets the button colour; --accent the small highlights. */
 
 :root {
 	--accent: #f4c9a8;
 	--accent-strong: #e9a274;
+	--pill: #6f5844;        /* muddy brown buttons (CV, Contact) */
+	--pill-hover: #574434;
 	--ink: #2b2b2b;
 	--muted: #6b6f76;
 	--link: #b8693a;
@@ -543,8 +545,8 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.4em;
-		background: var(--accent);
-		color: var(--ink);
+		background: var(--pill);
+		color: #ffffff;
 		border: none;
 		border-radius: 9999px;
 		padding: 0.45em 1.3em;
@@ -554,10 +556,17 @@
 	}
 
 		a.pill:hover {
-			background: var(--accent-strong);
+			background: var(--pill-hover);
+			color: #ffffff;
 			transform: translateY(-1px);
-			box-shadow: 0 4px 10px rgba(233, 162, 116, 0.35);
+			box-shadow: 0 4px 10px rgba(87, 68, 52, 0.35);
 		}
+
+	/* the template's dark cards (CV) recolour links; keep button text white */
+	.main.dark a.pill,
+	.main.dark a.pill:hover {
+		color: #ffffff;
+	}
 
 	.pill-icon {
 		width: 1.1em;
@@ -566,7 +575,22 @@
 
 /* Contact */
 
-	#contact .email {
-		font-size: 1.4em;
-		margin-bottom: 0.5em;
+	#contact .contact-lead {
+		font-style: italic;
+		font-size: 1.35em;
+		line-height: 1.4em;
+		margin: 0;
 	}
+
+	#contact .email {
+		font-size: 1em;
+		margin-bottom: 0.75em;
+	}
+
+		#contact .email a {
+			color: var(--rule);
+		}
+
+			#contact .email a:hover {
+				color: var(--pill);
+			}
