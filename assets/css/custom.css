@@ -125,19 +125,46 @@
 		}
 	}
 
-/* Publications: Georgia Tech evening sky, pinned to the bottom-left so the
-   lamp and GT flag sit in that corner. The extra bottom padding keeps the
-   text above the lamp, over open sky. */
+/* Publications + Recent News: one Georgia Tech evening-sky photo behind both,
+   pinned bottom-left so the lamp and GT flag sit in the corner of Recent News,
+   which is a white card on the right (like About) so the flag stays clear. */
+
+	#sky {
+		background: #989e9f url("../../images/georgia-moon-sky.jpg") left bottom / cover no-repeat;
+	}
+
+		#sky > .main {
+			background: transparent;
+		}
 
 	#pubs {
-		background: #989e9f url("../../images/georgia-moon-sky.jpg") left bottom / cover no-repeat;
-		padding-top: 9em; /* lets the moon sit above the heading */
-		padding-bottom: calc(21vw + 2em);
+		padding-top: 9em; /* room for the moon above the heading */
+	}
+
+	/* a wider card with a tighter date column keeps it within one screen */
+	@media screen and (min-width: 1001px) {
+		#news > .content {
+			width: 48%;
+		}
+
+		#news .entries ul.news li {
+			gap: 1em;
+		}
+
+			#news .entries ul.news .when {
+				flex-basis: 6.5em;
+			}
 	}
 
 	@media screen and (max-width: 736px) {
-		#pubs {
-			padding-bottom: 26em;
+		/* on phones show the photo at a size where the whole lamp and flag fit,
+		   with the sky colour continuing above it, and leave room below the card */
+		#sky {
+			background-size: 260% auto;
+		}
+
+		#news {
+			padding-bottom: 15em;
 		}
 	}
 
